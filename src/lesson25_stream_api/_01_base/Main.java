@@ -15,10 +15,10 @@ public class Main {
                 .filter(it -> it>=0)
                 .count());
         List<Integer> negativeNumbers = list.stream()
-                .filter(NEGATIVE_PREDICATE).toList();
+                .filter(NEGATIVE_PREDICATE).collect(Collectors.toList());
         negativeNumbers.forEach(System.out::println);
         List<Integer> positiveNumbers = list.stream()
-                .filter(POSITIVE_PREDICATE).toList();
+                .filter(POSITIVE_PREDICATE).collect(Collectors.toList());
         positiveNumbers.forEach(System.out::println);
 
 //        list = list.stream()
