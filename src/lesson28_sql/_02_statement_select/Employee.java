@@ -1,0 +1,14 @@
+package lesson28_sql._02_statement_select;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.ToString;
+
+@AllArgsConstructor
+@Data
+@ToString
+public class Employee {
+    private String name;
+    private int age;
+    private int department;
+}
