@@ -8,6 +8,5 @@ public class Main {
         var annotations = annotatedClassObj.getClass().getAnnotations();
         System.out.println("Quantity RunTime annotations " + annotations.length);
         Arrays.stream(annotations).forEach(System.out::println);
-
     }
 }
